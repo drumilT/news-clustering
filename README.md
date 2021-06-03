@@ -1,6 +1,7 @@
 # news-clustering
 
 run download_data.sh to download dataset
+run gen_data scripts according to your need and move those .json files in the subfolders to dataset folder for the code to use them  
 run run.sh to execute and print scores
 
 Implementation of the paper: Multilingual Clustering of Streaming News, Sebastião Miranda, Artūrs Znotiņš, Shay B. Cohen, Guntis Barzdins, In EMNLP 2018 (http://aclweb.org/anthology/D18-1483)
