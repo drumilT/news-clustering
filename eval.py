@@ -118,8 +118,11 @@ if not crosslingual:
       print("running score set...")
       print (true_labels)
       print (pred_labels)
-      
-  ScoreSet(true_labels, pred_labels, "mono-score")
+
+  try:    
+    ScoreSet(true_labels, pred_labels, "mono-score")
+  except:
+      print("Bug")
 
   if debug_prints:
       print("score set done.")   

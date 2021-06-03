@@ -11,7 +11,11 @@
 # Adapted from Arturs Znotins script
 #
 
-from scipy.misc import comb
+try:  # SciPy >= 0.19
+    from scipy.special import comb, logsumexp
+except ImportError:
+    from scipy.misc import comb, logsumexp  # noqa 
+
 import numpy as np
 
 # JavaScript like dictionary: d.key <=> d[key]
